@@ -1,0 +1,30 @@
+<html>
+<head>
+            <meta charset='utf-8'>
+            <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+            <title>AI objects Detector</title>
+            <meta name='viewport' content='width=device-width, initial-scale=1'>
+            <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+            <!--Ml5 Link-->
+            <script src='https://unpkg.com/ml5@latest/dist/ml5.min.js'></script>
+</head>
+<body background="background_a.png">
+            <center>
+                        <div class="header">
+                                    <p class="heading">AI Object Detector</p>
+                                    <p class="note">Note : If there is not a human or any objects in the camera , it will ring a bell</p>
+                        </div>
+                        <div class="inp-container">
+                                    <h4 class="inp-text">Input the object's name : </h4>
+                                    <input type="text" id="object-inp" class="object-inp" placeholder="Your object name...">
+                        </div>
+                        <div class="btns-container">
+                                    <button onclick="start()" class="myButton green" id="start">Start</button>
+                                    <br>
+                                    <h3 id="number_of_objects" class="myButton yellow">Number of Objects : NaN</h3>
+                                    <h3 id="status" class="myButton red">Status : Not Started</h3>
+                        </div>
+            </center>
+</body>
+<script src='main.js'></script>
+</html>
